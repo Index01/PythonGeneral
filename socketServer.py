@@ -11,7 +11,7 @@ while 1:
     print "[+]connected"
     data = client.recv(512)
     print data
-    data = client.recv(512) + "...back at ya" 
+    data = client.recv(512) + "some dumb response here" 
     if data: 
         client.send(data) 
     client.close()
